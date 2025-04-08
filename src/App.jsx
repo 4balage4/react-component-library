@@ -3,6 +3,7 @@ import Star from './components/Star/Star'
 import Badges from './components/Badge/Badges'
 import Menu from './components/Menu/index'
 import Banners from './components/Banner/Banners'
+import Card from './components/Card/index'
 
 function App() {
 
@@ -24,6 +25,12 @@ function App() {
       </Menu>
 
       <Banners/>
+
+
+      <Card>
+        <Card.Title>Our Values</Card.Title>
+        <Card.Description>Our company focuses on a personalized shopping experience.</Card.Description>
+      </Card>
     </>
   )
 }
