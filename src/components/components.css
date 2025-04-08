@@ -14,3 +14,10 @@
 
 /* Card */
 @import "./Card/Card.css";
+
+
+/* Testimonial */
+@import "./Testimonials/Testimonial.css";
+
+/* Testimonial-no-pic */
+@import "./Testimonial-no-pic/Testimonial.css";
