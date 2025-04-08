@@ -9,4 +9,8 @@
 @import  "./Menu/Menu.css";
 
 
+/* Banner */
 @import "./Banner/Banner.css";
+
+/* Card */
+@import "./Card/Card.css";
