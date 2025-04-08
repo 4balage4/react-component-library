@@ -1,0 +1,6 @@
+/* this css is for just organizing them into a row */
+
+.badge-container {
+  display: flex;
+  gap: 10px;
+}
