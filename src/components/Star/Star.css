@@ -1,0 +1,12 @@
+
+.star {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: color .5 ease-in-out;
+  color: white;
+}
+
+.star.filled {
+  color: orange;
+}
