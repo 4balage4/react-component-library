@@ -2,4 +2,11 @@
 
 /* Badges */
 @import "./Badge/Badge.css";
-@import "./Badge/Badges.css"
+@import "./Badge/Badges.css";
+
+
+/* Menu */
+@import  "./Menu/Menu.css";
+
+
+@import "./Banner/Banner.css";

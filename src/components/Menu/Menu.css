@@ -1,0 +1,44 @@
+
+.menu-component {
+  /* just to have it nicer arranged */
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.menu {
+  background-color: antiquewhite;
+  width: 150px;
+}
+
+.menu-item {
+  padding: 10px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+   flex-direction: column;
+   width: 100%;
+   cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: lightslategray;
+}
+
+.menu-dropdown {
+  padding: 5px;
+}
+
+.menu-button {
+  width: 100%;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: lightblue;
+}
+
+.menu-button:active, .menu-button:focus {
+  background-color: lightblue;
+}
