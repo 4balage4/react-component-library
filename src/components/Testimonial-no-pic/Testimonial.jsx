@@ -1,5 +1,5 @@
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
-
+import imgUrl from 'src/assets/download.png'
 
 function Testimonial({children, title, name}) {
   return (
@@ -7,9 +7,9 @@ function Testimonial({children, title, name}) {
       <div className='-no-pic-review'>
 
         <div className="testimonial-logo">
-          <img src='src/images/download.png' alt='company logo' />
+          <img src={imgUrl} alt='company logo' />
         </div>
-          <p className="testimonial-no-pic-text">{children}</p>
+          {children}
           <p className="testimonial-no-pic-name">{name} <span className="span-blue"> / </span>{title}</p>
       </div>
     </div>

@@ -5,3 +5,11 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+
+.btn-container {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

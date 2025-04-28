@@ -6,9 +6,25 @@ import Banners from './components/Banner/Banners'
 import Card from './components/Card/index'
 import Testimonial from './components/Testimonials/index'
 import TestimonialNoPic from './components/Testimonial-no-pic/index'
+import imageUrl from 'src/assets/aiony-haust-3TLl_97HNJo-unsplash.jpg'
+import Button from './components/Button/Button'
+import ToastProvider, {useToast} from './components/Toasts/ToastProvider'
+
 
 function App() {
 
+  // refactor for the toast context.
+  // to have the context I need to render it before initializing the addToast function. So ToastProvider renders, and renders the Initialapp with the addToast
+  return (
+    <ToastProvider>
+        <InnerApp/>
+    </ToastProvider>
+  )
+}
+
+
+function InnerApp() {
+  const {addToast} = useToast()
 
   return (
     <>
@@ -38,7 +54,7 @@ function App() {
     <Testimonial
         name="Rocky Jane"
         title="CEO of RockScissorPaper"
-        src='src/images/aiony-haust-3TLl_97HNJo-unsplash.jpg'
+        src={imageUrl}
         alt="Rocky Jane">
         <Testimonial.Description>Whenever my friends and I couldn’t decide where to eat or who had to take out the trash, we’d argue for hours—until we rediscovered the ancient wisdom of RSP. Now, every decision is quick, fair, and surprisingly intense.</Testimonial.Description>
     </Testimonial>
@@ -49,6 +65,16 @@ function App() {
         title="CEO of RockScissorPaper">
         <Testimonial.Description>Whenever my friends and I couldn’t decide where to eat or who had to take out the trash, we’d argue for hours—until we rediscovered the ancient wisdom of RSP. Now, every decision is quick, fair, and surprisingly intense.</Testimonial.Description>
     </TestimonialNoPic>
+
+
+
+      <h2>Toast Notifications</h2>
+      <div className='btn-container'>
+        <Button className='alert' onClick={() => {addToast('This is an alert!', 'alert')}}>Alert</Button>
+        <Button className='neutral' onClick={() => {addToast('Information here', 'neutral')}}>Neutral</Button>
+        <Button className='success' onClick={() => {addToast('Succesful click!', 'success')}}>Success</Button>
+
+      </div>
 
 
     </>
