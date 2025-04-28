@@ -4,7 +4,7 @@
   width: 50px;
   cursor: pointer;
   transition: color .5 ease-in-out;
-  color: white;
+  color: rgb(209, 208, 208);
 }
 
 .star.filled {

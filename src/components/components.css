@@ -21,3 +21,12 @@
 
 /* Testimonial-no-pic */
 @import "./Testimonial-no-pic/Testimonial.css";
+
+
+/* Button component */
+@import './Button//Button.css';
+
+
+/* Toast component */
+@import './Toasts/Toast.css';
+@import './Toasts/ToastProvider.css';
