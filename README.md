@@ -11,5 +11,7 @@ Solo project: Scrimba React advanced course.
 - Menu
 - Testimonial
 - Banner
+- Button - reusable
+- Toast Notification
 
 I learned about compound components design patterns, useContext, custom hooks, and reusable components during the 1st part of the course. 
